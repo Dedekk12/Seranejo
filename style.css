@@ -79,6 +79,10 @@
       color: #FFF0DC;
       font-size: 10vh;
 
+      animation-name: tituloAumenta;
+      animation-duration: 2s;
+      animation-delay: 0.5s;
+      
     }
 
   /* @KEYFRAMES SERVE  PARA aumentar o tamanho do titulo ao iniciar o site */
