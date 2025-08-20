@@ -9,8 +9,7 @@
     box-sizing: border-box;
 
     
-    animation-name: fadeIn;
-    animation-duration: 3s ;
+   
   }
 
 @keyframes fadeIn
@@ -79,17 +78,17 @@
       animation-name: tituloAumenta;
       animation-duration: 2s;
       animation-delay: 0.5s;
-      font-size: 90px;
+      font-size: 10vh;
     }
 
   /* @KEYFRAMES SERVE  PARA aumentar o tamanho do titulo ao iniciar o site */
   @keyframes tituloAumenta {
     from {
-      font-size: 0px
+      font-size: 0vh
     }
 
     to {
-      font-size: 90px
+      font-size: 10vh
     }
   }
 
@@ -163,13 +162,7 @@
     /* Tag para definir o espaçamento entre as letras no texto */
     letter-spacing: 0.15rem;
     
-
-    
   }
-
-    
-
-
 
 /* Fim-Butões */
 
@@ -183,51 +176,89 @@
 
 
 
-/* O - F U N D O - D A - I M A G E M */
+/* fundo-main */
 
-.fundo img {
-  
-  
-  mix-blend-mode: multiply;
-  /*mistura cor de fundo com a imagem */
-}
-
-.fundo {
+.fundo-main {
   
   display: flex;
+
   justify-content: center;
+  align-items: center;
+
   height: auto;
   width: auto;
-  background: linear-gradient(to right, #474646e3 44%, rgb(122, 83, 46) 60%);
-  /*A mistura de cores*/
-
-
-}
-
-/* FIM do fundo da imagem */
-
-.texto {
-
-  position: absolute;
-  width: 1200px;
-  margin-top: 7%;
-  /* margin-right: 0%; */
-  font-size: 37px;
-  color: azure;
+  height: 68vh;
+  padding: 10%;
   
-}
+  background-image: url('imagens/fundo_main.jpg');
 
-.Dupla {
-    
-    overflow: hidden;
-}
+  background-size: cover;
+  background-color: #74512D;
+  background-repeat: no-repeat;
+  background-blend-mode:multiply;
 
-.duo {
-
-  position: absolute;
-  width: 100%;
+  overflow: hidden;
 
 }
+
+  .fundo-main .texto
+    {
+      font-size: 4vh;
+
+      color: #ECEEDF;
+      
+      animation-name: textoAparece;
+      animation-duration: 8s;
+      animation-delay: 0.5s;
+      
+    }
+
+    .fundo-main .texto h1
+      {
+        animation-name: mudaTitulo;
+        animation-delay: 2s;
+        animation-duration: 8s;
+
+      }
+
+    @keyframes textoAparece
+      {
+        from
+          {
+            transform: translateY(200%);
+          }
+
+        to
+          {
+            transform: translateY(0);
+          }
+      }
+
+    @keyframes mudaTitulo
+      {
+        0%
+          {
+            font-size: 7vh;
+            transform: translateX(100%) rotate(10deg);
+
+
+          }
+
+        50%
+          {
+            font-size: 16vh;
+            transform: rotateY(90deg);
+          }
+
+        100% 
+          {
+            font-size: 7vh;
+            transform: translateX(0%) rotate(0deg);
+            
+          }
+      }
+
+/* fim fundo-main */
 
 
 
