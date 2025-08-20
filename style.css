@@ -8,8 +8,10 @@
     padding: 0;
     box-sizing: border-box;
 
+    animation-name: fadeIn;
+    animation-duration: 3s ;
     
-   
+    
   }
 
 @keyframes fadeIn
@@ -74,11 +76,8 @@
       text-decoration: none;
       font-family: "Rye", "Ubuntu", sans-serif;
       color: #FFF0DC;
-
-      animation-name: tituloAumenta;
-      animation-duration: 2s;
-      animation-delay: 0.5s;
       font-size: 10vh;
+
     }
 
   /* @KEYFRAMES SERVE  PARA aumentar o tamanho do titulo ao iniciar o site */
