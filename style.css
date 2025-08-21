@@ -42,9 +42,6 @@
 /* CABECALHO */
 .cabecalho {
 
-
-  overflow: hidden;
-
   width: 100%;
   height: 260px;
 
@@ -217,8 +214,12 @@
       
     }
 
-    .fundo-main .texto h1
+    .fundo-main h1
       {
+
+
+        font-family: "Rye","Ubuntu", sans-serif;
+
         animation-name: mudaTitulo;
         animation-delay: 2s;
         animation-duration: 8s;
@@ -263,6 +264,34 @@
       }
 
 /* fim fundo-main */
+
+/* container-historia */
+
+.container-historia
+    {  
+        padding: 10%;
+        height: 68vh;
+
+
+        color: #ECEEDF;
+
+        background-image: url(imagens/fundo_historia.png);
+        background-size: cover;
+    }
+
+        .container-historia .texto-historia
+            {
+                display: flex;
+
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                font-size: 3vh;
+
+                gap: 1vh;
+            }
+/* Fim conainer-historia */  
 
 
 
