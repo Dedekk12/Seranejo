@@ -151,7 +151,7 @@
 
   margin: 6px;
   padding: 10px 5px 10px 7px;
-  border-radius: 10px;
+
 
   color: #F0BB78;
   background-color: none;
@@ -161,18 +161,32 @@
   font-family: "Rye", sans-serif;
   /* Tag para definir o espaçamento entre as letras no texto */
   letter-spacing: 0.15rem;
-
+  transition: 0.5s ease-in-out;
 }
 
+.button:hover
+  {
+    animation-name: bordaButao;
+    animation-duration: 2s;
+
+  }
+
+
+
+@keyframes bordaButao
+{
+  0%
+    {
+      color: #734E38;
+    } 
+  100%
+    {
+      color: #F0BB78;
+    }  
+}
+
+
 /* Fim-Butões */
-
-
-
-
-
-
-
-
 
 
 
