@@ -1,38 +1,35 @@
 /* Fornece as Fontes Ubuntu e Rye;*/
 @import url(https://fonts.googleapis.com/css2?family=Rye&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 
-* 
-  {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-    animation-name: fadeIn;
-    animation-duration: 3s ;
-    
-    
+  animation-name: fadeIn;
+  animation-duration: 3s;
+
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
 
-@keyframes fadeIn
-{
-  from
-    {
-      opacity: 0;
-    }
+  to {
+    opacity: 1;
+    background-color: none;
+  }
 
-    to
-      {
-        opacity: 1;
-        background-color: none;
-      }
-  
 
 }
 
 
 .container {
- 
+
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -40,58 +37,61 @@
 }
 
 /* CABECALHO */
+
+
+
 .cabecalho {
+
 
   width: 100%;
   height: 260px;
 
-  background-image: 
-  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZa8WW5xks9l2EhqEdko4qU5iVpSxgJsUO7Q&s);
+  background-image:
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZa8WW5xks9l2EhqEdko4qU5iVpSxgJsUO7Q&s);
   background-size: contain;
-  background-blend-mode:multiply,luminosity ;
+  background-blend-mode: multiply, luminosity;
   background-color: #734E38;
-  
-  
+
+
 
 }
 
-  .cabecalho .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+.cabecalho .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 
-    text-decoration: none;
+  text-decoration: none;
 
+}
+
+.cabecalho img {
+  height: 260px;
+}
+
+.cabecalho a {
+  text-decoration: none;
+  font-family: "Rye", "Ubuntu", sans-serif;
+  color: #FFF0DC;
+  font-size: 10vh;
+
+  animation-name: tituloAumenta;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+
+}
+
+/* @KEYFRAMES SERVE  PARA aumentar o tamanho do titulo ao iniciar o site */
+@keyframes tituloAumenta {
+  from {
+    font-size: 0vh
   }
 
-  .cabecalho img {
-    height: 260px;
+  to {
+    font-size: 10vh
   }
-
-  .cabecalho a 
-    {
-      text-decoration: none;
-      font-family: "Rye", "Ubuntu", sans-serif;
-      color: #FFF0DC;
-      font-size: 10vh;
-
-      animation-name: tituloAumenta;
-      animation-duration: 2s;
-      animation-delay: 0.5s;
-      
-    }
-
-  /* @KEYFRAMES SERVE  PARA aumentar o tamanho do titulo ao iniciar o site */
-  @keyframes tituloAumenta {
-    from {
-      font-size: 0vh
-    }
-
-    to {
-      font-size: 10vh
-    }
-  }
+}
 
 
 
@@ -100,75 +100,74 @@
 /* MENU-CABECALHO
  */
 
-  .menu {
-    background-image:
-      url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLLtyHadb_fyfdFjrbfUtpQVzn04VF79pHog&s');
+.menu {
+  background-image:
+    url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLLtyHadb_fyfdFjrbfUtpQVzn04VF79pHog&s');
 
-    background-size: auto;
-    background-color: #442b1d;
-    background-blend-mode: multiply ;
-
-    
-
-    width: 100%;
-    /* height: 60px;  OBS: o site fica a mesma coisa sem isso*/
+  background-size: auto;
+  background-color: #442b1d;
+  background-blend-mode: multiply;
 
 
 
-  }
-
-  .menu ul {
-
-
-    display: flex;
-    list-style: none;
-
-    gap: 10px;
-
-    justify-content: space-around;
-    align-items: center;
-
-    width: 100%;
-  }
-
-  .menu a {
+  width: 100%;
+  /* height: 60px;  OBS: o site fica a mesma coisa sem isso*/
 
 
-    
-    margin-left: 10px;
-    margin-right: 10px;
 
-  }
+}
+
+.menu ul {
+
+
+  display: flex;
+  list-style: none;
+
+  gap: 10px;
+
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+}
+
+.menu a {
+
+
+
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
 
 
 
 /* Butões */
-  .button 
-  {
-    display: flex;
+.button {
+  display: flex;
 
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 
-    margin: 6px;
-    padding: 10px 5px 10px 7px;
-    border-radius: 10px;
+  margin: 6px;
+  padding: 10px 5px 10px 7px;
+  border-radius: 10px;
 
-    color: #F0BB78;
-    background-color: none;
+  color: #F0BB78;
+  background-color: none;
 
-    font-size: large;
-    text-decoration: none;
-    font-family: "Rye", sans-serif;
-    /* Tag para definir o espaçamento entre as letras no texto */
-    letter-spacing: 0.15rem;
-    
-  }
+  font-size: large;
+  text-decoration: none;
+  font-family: "Rye", sans-serif;
+  /* Tag para definir o espaçamento entre as letras no texto */
+  letter-spacing: 0.15rem;
+
+}
 
 /* Fim-Butões */
 
 
-  
+
 
 
 
@@ -180,7 +179,7 @@
 /* fundo-main */
 
 .fundo-main {
-  
+
   display: flex;
 
   justify-content: center;
@@ -190,108 +189,147 @@
   width: auto;
   height: 68vh;
   padding: 10%;
-  
+
   background-image: url('imagens/fundo_main.jpg');
 
   background-size: cover;
   background-color: #74512D;
   background-repeat: no-repeat;
-  background-blend-mode:multiply;
+  background-blend-mode: multiply;
 
   overflow: hidden;
 
 }
 
-  .fundo-main .texto
-    {
-      font-size: 4vh;
+.fundo-main .texto {
+  font-size: 4vh;
 
-      color: #ECEEDF;
-      
-      animation-name: textoAparece;
-      animation-duration: 8s;
-      animation-delay: 0.5s;
-      
-    }
+  color: #ECEEDF;
 
-    .fundo-main h1
-      {
+  animation-name: textoAparece;
+  animation-duration: 8s;
+  animation-delay: 0.5s;
 
 
-        font-family: "Rye","Ubuntu", sans-serif;
+}
 
-        animation-name: mudaTitulo;
-        animation-delay: 2s;
-        animation-duration: 8s;
-
-      }
-
-    @keyframes textoAparece
-      {
-        from
-          {
-            transform: translateY(200%);
-          }
-
-        to
-          {
-            transform: translateY(0);
-          }
-      }
-
-    @keyframes mudaTitulo
-      {
-        0%
-          {
-            font-size: 7vh;
-            transform: translateX(100%) rotate(10deg);
+.fundo-main h1 {
 
 
-          }
+  font-family: "Rye", "Ubuntu", sans-serif;
 
-        50%
-          {
-            font-size: 16vh;
-            transform: rotateY(40deg);
-          }
+  animation-name: mudaTitulo;
+  animation-delay: 2s;
+  animation-duration: 8s;
 
-        100% 
-          {
-            font-size: 7vh;
-            transform: translateX(0%) rotate(0deg);
-            
-          }
-      }
+}
+
+@keyframes textoAparece {
+  from {
+    transform: translateY(200%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes mudaTitulo {
+  0% {
+    font-size: 7vh;
+    transform: translateX(100%) rotate(10deg);
+
+
+  }
+
+  50% {
+    font-size: 16vh;
+    transform: rotateY(40deg);
+  }
+
+  100% {
+    font-size: 7vh;
+    transform: translateX(0%) rotate(0deg);
+
+  }
+}
 
 /* fim fundo-main */
 
 /* container-historia */
 
-.container-historia
-    {  
-        padding: 10%;
-        height: 68vh;
+.container-historia {
+  padding: 10%;
+  height: 68vh;
 
 
-        color: #ECEEDF;
+  color: #ECEEDF;
 
-        background-image: url(imagens/fundo_historia.png);
-        background-size: cover;
-    }
+  background-image: url(imagens/fundo_historia.png);
+  background-size: cover;
+}
 
-        .container-historia .texto-historia
-            {
-                display: flex;
+.container-historia .texto-historia {
+  display: flex;
 
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-                font-size: 3vh;
+  font-size: 3vh;
 
-                gap: 1vh;
-            }
-/* Fim conainer-historia */  
+  gap: 1vh;
+}
+
+/* Fim conainer-historia */
+
+/* Rodapé */
+.container-rodape {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  width: 100%;
+  height: 16vh;
+
+  background-image: linear-gradient(180deg, #1c1c1c 0%, #2B2B2B 100%);
+}
+
+.container-rodape .rodape {
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0vh 8vh;
+  padding: 1vh 0;
+
+  width: 100%;
+
+  border-top: solid #fff 1px;
+
+
+  gap: 2vh;
+
+}
+
+.rodape a {
+  width: 2%;
+  height: auto;
+
+  text-decoration: none;
+  color: #C8C2BC;
+
+  font-size: xx-large
+}
+
+.rodape h3 {
+  color: #ECEEDF;
+
+}
 
 
 
