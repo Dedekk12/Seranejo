@@ -1,104 +1,399 @@
+/* Fornece as Fontes Ubuntu e Rye;*/
 @import url(https://fonts.googleapis.com/css2?family=Rye&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);
 
 
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
+  animation-name: fadeIn;
+  animation-duration: 3s;
 
-.container
-{  
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-}
-
- /* CABECALHO */
-.cabecalho 
-{
-
-    
-    overflow: hidden;
-
-    width: 1300;
-    height: 260px;
-
-    background-image: linear-gradient(90deg,#66432c -1%, #060505 75%);
 
 }
 
-    .cabecalho .container
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+body {
 
-        text-decoration: none;
-        
-    }
+  background: #74512D;
+}
 
-    .cabecalho img 
-    {
-        height: 260px;
-    }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
 
-    .cabecalho a 
-    {
-        text-decoration: none;
-        font-family: "Rye", "Ubuntu", sans-serif;
-        color: #fff;
-        
-        animation-name: tituloMove;
-        animation-duration: 2s;
+  to {
+    opacity: 1;
+    background-color: none;
+  }
+}
 
-        font-size: 100px;
-    }
+.container {
 
-    @keyframes tituloMove {
-        from{font-size: 0px}
-        to {font-size : 100px}
-    }
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
-    
+/* CABECALHO */
+.cabecalho {
+
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 260px;
+
+  background-image:
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZa8WW5xks9l2EhqEdko4qU5iVpSxgJsUO7Q&s);
+  background-size: contain;
+  background-blend-mode: multiply, luminosity;
+  background-color: #734E38;
+
+
+
+}
+
+.cabecalho .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  text-decoration: none;
+
+}
+
+.cabecalho img {
+  height: 260px;
+}
+
+.cabecalho a {
+  text-decoration: none;
+  font-family: "Rye", "Ubuntu", sans-serif;
+  color: #FFF0DC;
+  font-size: 10vh;
+
+  animation-name: tituloAumenta;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+
+}
+
+/* @KEYFRAMES SERVE  PARA aumentar o tamanho do titulo ao iniciar o site */
+@keyframes tituloAumenta {
+  from {
+    font-size: 0vh
+  }
+
+  to {
+    font-size: 10vh
+  }
+}
 
 /* FIM DO CABECALHO */
 
-/* MENU */
+/* MENU-CABECALHO
+ */
 
-.menu 
-    {     
-        background-image: linear-gradient(180deg,#fff 0%, #dbdbdb 100%);
+.menu {
+  background-image:
+    url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLLtyHadb_fyfdFjrbfUtpQVzn04VF79pHog&s');
 
-        width: 100%;
-        height: 50px;
+  background-size: auto;
+  background-color: #442b1d;
+  background-blend-mode: multiply;
 
-        
+  display: flex;
+  justify-content: center;
 
-    }
+  width: 100%;
+  /* height: 60px;  OBS: o site fica a mesma coisa sem isso*/
 
-    .menu ul
+}
+
+.menu ul {
+
+
+  display: flex;
+  list-style: none;
+
+  justify-content: space-around;
+  align-items: center;
+
+  gap: 3px;
+}
+
+.menu a {
+
+
+
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+/* Butões */
+.button {
+  display: flex;
+
+  position: relative;
+  overflow: hidden;
+
+  margin: 6px;
+  padding: 10px 5px 10px 7px;
+  border-radius: 10px;
+
+  color: #F0BB78;
+  background-color: none;
+
+  font-size: large;
+  text-decoration: none;
+  font-family: "Rye", sans-serif;
+  /* Tag para definir o espaçamento entre as letras no texto */
+  letter-spacing: 0.15rem;
+
+}
+
+/* Fim-Butões */
+
+/* fundo-main */
+
+
+
+.fundo-main {
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  height: auto;
+  width: auto;
+  height: 68vh;
+  padding: 10%;
+
+  background-image: url('imagens/fundo_main.jpg');
+
+  background-size: cover;
+  background-color: #74512D;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+
+  overflow: hidden;
+
+}
+
+.fundo-main .texto {
+  font-size: 4vh;
+
+  color: #ECEEDF;
+
+  animation-name: textoAparece;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+
+}
+
+
+
+@keyframes textoAparece {
+  from {
+    transform: translateY(200%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes mudaTitulo {
+  0% {
+    font-size: 7vh;
+    transform: translateX(100%) rotate(10deg);
+
+
+  }
+
+  50% {
+    font-size: 16vh;
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    font-size: 7vh;
+    transform: translateX(0%) rotate(0deg);
+
+  }
+}
+
+/* fim fundo-main */
+
+/* container-historia */
+
+.container-historia {
+  padding: 10%;
+  height: 68vh;
+
+
+  color: #ECEEDF;
+
+  background-image: url(imagens/fundo_historia.png);
+
+  background-size: cover;
+  background-color: #74512D;
+  background-blend-mode: multiply;
+}
+
+.container-historia .texto-historia {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 3vh;
+
+  gap: 1vh;
+}
+
+
+
+/* Fim conainer-historia */
+
+/* Rodapé */
+.container-rodape {
+  display: flex;
+
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  width: 100%;
+  height: 16vh;
+
+  background-image: linear-gradient(180deg, #1c1c1c 0%, #2B2B2B 100%);
+}
+
+.container-rodape .rodape {
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0vh 8vh;
+  padding: 1vh 0;
+
+  width: 100%;
+
+  border-top: solid #fff 1px;
+  color: #ECEEDF;
+
+
+  gap: 2vh;
+
+}
+
+  .rodape a  
     {
 
+      text-decoration: none;
+      color: #ECEEDF;
 
-        display: flex;
-        list-style: none;
-        gap: 10px;
-        justify-content: space-around;
-        align-items: center;
-
-        width: 100%;
     }
 
 
 
 
-    
+/* Fundo-Agenda */
+.fundo-agenda {
 
-    
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+
+  width: auto;
+  height: 68vh;
+  padding: 10%;
+
+  background-image: url('imagens/cantores.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-color: rgb(80 ,63 ,47); 
+
+  color: #edc693;
+
+  overflow: hidden;
+
+  font-family: "Rye", "Ubuntu", sans-serif;
+}
+
+
+
+/* começo album foto */
+
+.container-fotos
+  {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+  }
+
+/* fim album foto */
+
+/* Começo discografia */
+
+.container-album 
+{
+  display: flex;
+
+  align-items: center;
+
+  padding: 4vh 0;
+
+  color: #edc693;
+
+  background-image: linear-gradient(180deg, #36210e 0%, #1c1c1c 100%);
+
+  font-size: xx-large;
+  font-family: "Rye", "Ubuntu" , sans-serif;
+
+  gap: 10px;
+
+}
+
+  .container-album .album-1 
+    {
+      display: flex;
+
+      height: 65vh;
+
+      border-radius: 10px;
+
+    }
+
+  .container-album .disco 
+    {
+
+      height: 66vh;
+    }
+
+
+
+
 
 
 
