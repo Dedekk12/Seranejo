@@ -330,7 +330,7 @@ body {
   background-image: url('imagens/cantores.png');
   background-blend-mode: multiply;
   background-size: cover;
-  background-color: rgb(80 63 47); 
+  background-color: rgb(80 63 47);
   background-repeat: no-repeat;
 
   transition: 0.5s ease-in-out;
@@ -348,148 +348,109 @@ body {
 
 /* começo album foto */
 
+.Imagem {
+
+  padding: 1vh;
+
+}
+
+.Espaco-Curto {
+  height: 5vh;
+  
+}
+
 .fundofotos {
 
-  height: 100vh;
   background: #74512D;
 
   display: flex;
   align-items: center;
-  margin-top: 10vh;
+  justify-content: center;
 
 }
 
-.imagemoito {
+.Hot-Dog {
 
-  height: 73vh;
-
-  margin-top: -30vh;
-  margin-left: 3vh;
-
-  border-radius: 32px;
-
-}
-
-.imagemquatro {
-
-  height: 73vh;
-
-
-  margin-top: -30vh;
-  margin-left: 25vh;
-
-  border-radius: 32px;
-
-}
-
-.fundofotos2 {
-
-  height: 30vh;
-  margin-top: -9vh;
-
-  background: #74512D;
+  height: 70vh;
+  width: 100vh;
 
   display: flex;
-  align-items: center;
-}
 
-.imagemcinco {
 
-  height: 63vh;
-
-  margin-left: 25vh;
-  border-radius: 32px;
+  border-radius: 40px;
 
 }
 
-.imagemseis {
+.Uberaba {
 
-  height: 63vh;
+  height: 70vh;
+  width: 50vh;
 
-  margin-left: 4vh;
-  border-radius: 32px;
-
+  border-radius: 40px;
 }
 
-.fundofotos3 {
+.Dupla {
 
-  background: #74512D;
+  height: 7 0vh;
+  width: 60vh;
 
-  margin-top: 19vh;
-
-  display: flex;
-  align-items: center;
-
+  border-radius: 40px
 }
 
-.imagembardois {
+.Gramado {
 
-  height: 465px;
-  margin-left: 4vh;
-  border-radius: 32px;
+  height: 60vh;
+  width: 90vh;
 
+  border-radius: 40px;
 }
 
-.imagembar {
+.Bar-Two {
 
-  height: 468px;
-  margin-left: 25vh;
-  border-radius: 32px;
+  height: 69vh;
+  width: 102vh;
 
+  border-radius: 40px;
 }
 
-.fundofotos4 {
+.Bar {
 
-  background: #74512D;
+  height: 69vh;
+  width: 48vh;
 
-  margin-top: 3vh;
-
-  display: flex;
-  align-items: center;
-
+  border-radius: 40px;
 }
 
-.imagemdois {
+.Tocando {
 
-  height: 63vh;
-  margin-left: 25vh;
-  border-radius: 32px;
+  height: 60vh;
+  width: 90vh;
 
+  border-radius: 40px;
 }
 
-.imagemum {
+.Coca {
 
-  height: 63vh;
-  margin-left: 4vh;
-  border-radius: 32px;
+  height: 60vh;
+  width: 60vh;
 
+  border-radius: 40px;
 }
 
-.fundofotos5 {
+.Violao {
 
-  background: #74512D;
+  height: 60vh;
+  width: 60vh;
 
-  margin-top: 3vh;
-  margin-bottom: 7vh;
-
-  display: flex;
-  align-items: center;
+  border-radius: 40px;
 }
 
-.imagemtres {
+.Show {
 
-  height: 407px;
-  margin-left: 3vh;
-  border-radius: 32px;
+  height: 60vh;
+  width: 90vh;
 
-}
-
-.imagemsete {
-
-  height: 407px;
-  margin-left: 25vh;
-  border-radius: 32px;
-
+  border-radius: 40px;
 }
 
 /* fim album foto */
