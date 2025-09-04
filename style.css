@@ -170,7 +170,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  height: auto;
+
   width: auto;
   height: 68vh;
   padding: 10%;
@@ -266,6 +266,7 @@ body {
 /* Rodapé */
 .container-rodape {
   display: flex;
+
 
 
   align-items: center;
@@ -389,6 +390,32 @@ body {
     {
 
       height: 66vh;
+    }
+
+
+/* Letra das musicas */
+.container-letra
+    {
+      display: flex;
+
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      width: auto;
+      height: 68vh;
+      padding: 10%;
+      gap: 20px;
+
+      background-image: url(imagens/img3.png);
+      background-size: cover;
+      background-color: #442b1d;
+      background-blend-mode: multiply;
+
+      color: #edc693;
+
+      font-family: "Rye","Ubuntu",sans-serif;
+
     }
 
 
