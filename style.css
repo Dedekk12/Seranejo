@@ -340,21 +340,6 @@ body {
 
 
 
-/* começo album foto */
-
-.container-fotos
-  {
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    overflow: hidden;
-
-  }
-
-/* fim album foto */
-
 /* Começo discografia */
 
 .container-album 
@@ -463,7 +448,7 @@ body {
 
 .Dupla {
 
-  height: 70vh;
+  height: 60vh;
   width: 60vh;
 
   border-radius: 40px
