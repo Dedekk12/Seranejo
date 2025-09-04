@@ -418,6 +418,114 @@ body {
 
     }
 
+/* começo album foto */
+
+.Imagem {
+
+  padding: 1vh;
+
+}
+
+.Espaco-Curto {
+  height: 5vh;
+
+}
+
+.fundofotos {
+
+  background: #74512D;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Hot-Dog {
+
+  height: 70vh;
+  width: 100vh;
+
+  display: flex;
+
+
+  border-radius: 40px;
+
+}
+
+.Uberaba {
+
+  height: 70vh;
+  width: 50vh;
+
+  border-radius: 40px;
+}
+
+.Dupla {
+
+  height: 70vh;
+  width: 60vh;
+
+  border-radius: 40px
+}
+
+.Gramado {
+
+  height: 60vh;
+  width: 90vh;
+
+  border-radius: 40px;
+}
+
+.Bar-Two {
+
+  height: 69vh;
+  width: 102vh;
+
+  border-radius: 40px;
+}
+
+.Bar {
+
+  height: 69vh;
+  width: 48vh;
+
+  border-radius: 40px;
+}
+
+.Tocando {
+
+  height: 60vh;
+  width: 90vh;
+
+  border-radius: 40px;
+}
+
+.Coca {
+
+  height: 60vh;
+  width: 60vh;
+
+  border-radius: 40px;
+}
+
+.Violao {
+
+  height: 60vh;
+  width: 60vh;
+
+  border-radius: 40px;
+}
+
+.Show {
+
+  height: 60vh;
+  width: 90vh;
+
+  border-radius: 40px;
+}
+
+/* fim album foto */
 
 
 
